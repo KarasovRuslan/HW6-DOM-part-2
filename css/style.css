@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    transition: 1000ms;
+}
+
+.rectangle {
+    height: 200px;
+    width: 400px;
+    transition: 1000ms;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: 1000ms;
+}
