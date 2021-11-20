@@ -1,15 +1,12 @@
-let figure = document.getElementById('figure')
-let typeFigure = document.getElementById('typeFigure')
-let colorFigure = document.getElementById('colorFigure')
-let applyBtn = document.getElementById('applyBtn')
+let figure = document.querySelector('.figure');
+let button = document.querySelector('.button');
+let selectElement = document.querySelector('.custom_select');
 
-window.addEventListener('click', function() {
-    function applyChanges() {
-        figure.classList.remove(...figure.classList);
-        figure.classList.add(typeFigure.value);
-        figure.style.backgroundColor = colorFigure.value || '#000000';
-    }
-    if (figure && typeFigure && colorFigure && applyBtn) {
-        applyBtn.addEventListener('click', applyChanges)
-    }
+selectElement.addEventListener('change', (event) => {
+    figure.setAttribute('class', 'figure ' + event.target.value);
 });
+
+button.onclick = function colorChoice() {
+    let shapeColor = document.querySelector('input').value;
+    figure.style.backgroundColor = shapeColor;
+}

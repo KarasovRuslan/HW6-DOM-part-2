@@ -1,9 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HW6-DOM-part-2</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -13,15 +12,16 @@
 <section class="container">
     <div class="block">
         <div class="figure_group">
-            <div id="figure"></div>
+            <div class="figure"></div>
         </div>
         <div class="figure_control">
             <div class="input_group">
                 <div class="input_group_prepend">
-                    <label class="input_group_text" for="typeFigure">Тип фигуры</label>
+                    <label class="input_group_text" for="typeFigure">Выберите фигуру</label>
                 </div>
-                <select class="custom_select" id="typeFigure">
-                    <option selected value="square">квадрат</option>
+                <select class="custom_select">
+                    <option selected disabled>Тип фигуры</option>
+                    <option value="square">квадрат</option>
                     <option value="rectangle">прямоугольник</option>
                     <option value="circle">круг</option>
                 </select>
